@@ -1,0 +1,106 @@
+.fidgetComp{
+    position: relative;
+    top: 5rem;
+    width: 80%;
+}
+
+.mainCircle{
+    box-shadow: 0px 2px 6px #bbbbbb;
+    width: 10rem;
+    height: 10rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+    right: 28.5rem;
+    background: #fff;
+    z-index: 10;
+}
+
+.mainCircle img{
+    width: 4rem;
+}
+
+.mainCircle p{
+    margin: 0;
+}
+
+.mainCircle-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sub .subCircle-content{
+    width: 2rem;
+    height: 2rem;
+}
+
+.sub{
+    box-shadow: 0px 0px 6px #bbbbbb;
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.subCircle1{
+    right: 38rem;
+    background: #cccccc;
+    top: 1rem;
+}
+
+.subCircle2{
+    right: 26rem;
+    background: #D40511;
+    top: 1rem;
+}
+
+.subCircle3{
+    right: 32rem;
+    top: 10rem;
+    background: #ffcc00;
+}
+
+.subCircle1 .subCircle-content, .subCircle2 .subCircle-content, .subCircle3 .subCircle-content{
+    display: none;
+}
+
+.subCircle1-expand{
+    background-color: #707070;
+}
+
+.subCircle1-expand, .subCircle2-expand, .subCircle3-expand{
+    transform: scale(1.8);
+    cursor: pointer;
+}
+
+.subCircle1-expand .subCircle-content, .subCircle2-expand .subCircle-content, .subCircle3-expand .subCircle-content{
+    display: block !important;
+    font-size: 0.5rem;
+}
+
+.subCircle2-expand .subCircle-content{
+    position: absolute;
+    left: 2.5rem;
+    top: 1rem;
+    color: #fff;
+}
+
+.subCircle3-expand .subCircle-content{
+    position: absolute;
+    top: 2.5rem;
+    left: 1.5rem;
+}
+
+.subCircle1-expand .subCircle-content{
+    position: absolute;
+    left: 0.5rem;
+    color: #fff;
+}
